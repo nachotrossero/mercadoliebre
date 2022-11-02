@@ -7,7 +7,7 @@ const app = express();
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath))
 
-let PORT = process.ENV.PORT || 3000;
+let PORT = process.env.PORT || 3000;
 app.listen(PORT,()=>{
     console.log('Listen on port ' + 3000)});
 
